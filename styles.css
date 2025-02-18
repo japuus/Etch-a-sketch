@@ -17,16 +17,22 @@ body {
 .cell {
     flex: 1 0 6.25%; /* 6.25% makes 16 cells fit evenly in a row */
     box-sizing: border-box; /* Ensures padding and border are included in the width/height */
-    border: 0.01px solid rgb(0, 0, 0);
+    border: 0.01px solid;
+    /*border-color: "#3C9EE7";*/
     height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 0.1;
+    /*opacity: 0.1;*/
 }
 
 .clearAllButton {
     margin-left: 30px;
+    margin-right: 10px;
     height: 100px;
     border-radius: 15px;
+}
+
+.tenByTenGrid {
+    height: 100px;
 }
