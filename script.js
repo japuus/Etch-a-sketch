@@ -1,6 +1,6 @@
 const container = document.querySelector("#container");
 let color = ["#3C9EE7", "#E7993C", "#E73C99", "#3CE746", "#E7993C"];
-let blue = "#3C9EE7";
+let blue = "#0D98BA";
 let white = "#FFFFFF";
 let mouseDown = false;
 //let opasiteetti = 0.1;
@@ -21,12 +21,15 @@ for (let i = 0; i < 256; i++) {
     container.appendChild(cell);
     cell.addEventListener("mouseover", () => {
         if (mouseDown) {
-            cell.style.backgroundColor = blue;
+           // cell.style.backgroundColor = blue;
             let currentOpacity = parseFloat(cell.dataset.opacity);
             currentOpacity += 0.1;
-            cell.style.opacity = currentOpacity;
+           cell.style.backgroundColor = `rgba(13, 152, 186, ${currentOpacity})`;
+            cell.style.opacity = 1;
+            //cell.style.opacity = currentOpacity;
+
             cell.dataset.opacity = currentOpacity;
-            // cell.style.background = color[(Math.floor(Math.random() * color.length))];
+           // cell.style.background = color[(Math.floor(Math.random() * color.length))];
         }
     });
 
