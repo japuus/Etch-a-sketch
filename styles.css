@@ -4,35 +4,58 @@ body {
     align-items: center;
 }
 
-
 #container {
     display: flex;
     flex-wrap: wrap;
     width: 1200px; /* Adjust width as needed */
-    border: 0.01px solid red;
     opacity: 1;
+    margin-right: 80px;
+    border: 0.5px solid black;
+}
 
+#button-container {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
 }
 
 .cell {
     flex: 1 0 6.25%; /* 6.25% makes 16 cells fit evenly in a row */
     box-sizing: border-box; /* Ensures padding and border are included in the width/height */
-    border: 0.01px solid;
-    /*border-color: "#3C9EE7";*/
+    border: 0.01px solid; 
     height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
-    /*opacity: 0.1;*/
 }
 
 .clearAllButton {
-    margin-left: 30px;
+    margin-left: 10px;
     margin-right: 10px;
     height: 100px;
-    border-radius: 15px;
 }
 
-.tenByTenGrid {
-    height: 100px;
+.create64 {
+    height: 50px;
+    margin-top: 10px;
+}
+
+.create128 {
+    height: 50px;
+    margin-top: 10px;
+}
+
+.create256 {
+    height: 50px;
+    margin-top: 10px;
+}
+
+.rainbowButton {
+    height: 30px;
+    margin-top: 10px;
+}
+
+.regularMode {
+    height: 30px;
+    margin-top: 10px;
 }
